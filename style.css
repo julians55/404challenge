@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@700&display=swap');
+body{
+    background: white;
+}
+h3{
+    position: absolute;
+    width: 133px;
+    height: 25px;
+    left: 77px;
+    top: 20px;
+
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+
+    color: #333333;
+
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin-top: 100px;
+    margin-left: 10%;
+  }
+.box div{
+	width: 60%;
+	max-width: 700px;
+}
+.box div img{
+    max-width: 90%;
+    max-height: 90%;
+}
+.box .subbox{
+    font-family: Space Mono;
+    text-align: left;
+    font-size: 32px;
+    color: #333333;
+}
+.box .subbox1{
+    width: 40%;
+    font-family: Space Mono;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: normal;
+    color: #4F4F4F;
+}
+.box .subbox2{
+    color: white;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    font-size: 12px;
+    margin-top: 25px;
+    background: #333333;
+}
+@media (max-width: 920px) {
+    .box {
+        flex-direction: column;
+        margin-top: 100px;
+        margin-left: 10%;
+      }
+      .box div{
+        width: 100%;
+        max-width: 700px;
+    }
+    .box .subbox1{
+        width: 70%;
+    }
+      .box div img{
+        max-width: auto;
+        max-height: auto;
+    }
+    
+}
